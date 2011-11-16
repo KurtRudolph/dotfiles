@@ -1,3 +1,13 @@
+" Loads current verson of vim-pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+" Loads all vim plugins stored in .vim/bundle
+call pathogen#infect()
+
+" Recognize upc files as C files
+au BufNewFile,BufRead *.upc set filetype=c 
+" Recognize cuda files as C files
+au BufNewFile,BufRead *.cu set filetype=c 
+
 " Make vim more useful
 set nocompatible
 " Allow cursor keys in insert mode
@@ -36,7 +46,7 @@ set laststatus=2
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
-set noerrorbells
+"set noerrorbells
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
@@ -62,3 +72,6 @@ function! StripWhitespace ()
   call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
+
+
+
