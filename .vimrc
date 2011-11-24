@@ -28,6 +28,8 @@ set noeol
 set number
 " Enable syntax highlighting
 syntax on
+" Set the maximum columns scanned for syntax highlight, default (3000) very slow make vim sluggish
+set synmaxcol=50
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
@@ -37,14 +39,15 @@ set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
 " Highlight searches
 set hlsearch
-" Ignore case of searches
-set ignorecase
-" Highlight dynamically as pattern is typed
-set incsearch
-" Always show status line
-set laststatus=2
-" Enable mouse in all modes
-set mouse=a
+"" Ignore case of searches
+"set ignorecase
+"I like this next feature but I think it is making vim sluggish
+"" Highlight dynamically as pattern is typed
+"set incsearch
+"" Always show status line
+"set laststatus=2
+"" Enable mouse in all modes
+"set mouse=a
 " Disable error bells
 "set noerrorbells
 " Don’t reset cursor to start of line when moving around.
