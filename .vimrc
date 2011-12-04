@@ -8,14 +8,14 @@ au BufNewFile,BufRead *.upc set filetype=c
 " Recognize cuda files as C files
 au BufNewFile,BufRead *.cu set filetype=c 
 
-" Make vim more useful
-set nocompatible
+"" Make vim more useful
+"set nocompatible
 " Allow cursor keys in insert mode
 set esckeys
 " Optimize for fast terminal connections
 set ttyfast
-" Add the g flag to search/replace by default
-set gdefault
+"" Add the g flag to search/replace by default
+"set gdefault
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
 " Change mapleader
@@ -29,7 +29,7 @@ set number
 " Enable syntax highlighting
 syntax on
 " Set the maximum columns scanned for syntax highlight, default (3000) very slow make vim sluggish
-set synmaxcol=50
+set synmaxcol=100
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
