@@ -152,6 +152,9 @@ defaults write -g KeyRepeat 2
 # Set keyrepeat delay
 defaults write -g InitialKeyRepeat 15
 
+# Set the terminal to be Pro themeed
+defaults write com.apple.Terminal 'Default Window Settings' 'Pro'
+
 # Reset Launchpad
 [ -e ~/Library/Application\ Support/Dock/*.db ] && rm ~/Library/Application\ Support/Dock/*.db
 
