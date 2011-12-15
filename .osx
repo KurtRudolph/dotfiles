@@ -147,7 +147,10 @@ defaults write -g com.apple.mouse.scaling 5.0
 defaults write -g com.apple.scrollwheel.scaling 2.0
 
 # Set keyrepeat speed
-defaults write -g KeyRepeat 3
+defaults write -g KeyRepeat 2
+
+# Set keyrepeat delay
+defaults write -g InitialKeyRepeat 15
 
 # Reset Launchpad
 [ -e ~/Library/Application\ Support/Dock/*.db ] && rm ~/Library/Application\ Support/Dock/*.db
