@@ -34,5 +34,7 @@
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
 [user]
-  name = Kurt Robert Rudolph
+  name = "Kurt Robert Rudolph"
   email = rudolph.kurt@rudyindustries.com
+[github]
+  user = rudolph9
