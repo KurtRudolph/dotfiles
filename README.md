@@ -11,19 +11,19 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ```bash
 ./.osx
 ```
-
 To update, `cd` into your local `dotfiles` repository and then:
 
 ```bash
 ./bootstrap.sh
 ```
+### Git-free install
 
-Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
+To install these dotfiles without Git:
 
-## Thanks to…
-* [Gianni Chiappetta](http://gf3.ca/) for sharing his [amazing collection of dotfiles](https://github.com/gf3/dotfiles)
-* [Matijs Brinkhuis](http://hotfusion.nl/) and his [homedir repository](https://github.com/matijs/homedir)
-* [Jan Moesen](http://jan.moesen.nu/) and his [ancient `.bash_profile`](https://gist.github.com/1156154) + [shiny tilde repository](https://github.com/janmoesen/tilde)
-* [Tim Esselens](http://devel.datif.be/)
-* anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)
+```bash
+cd; curl -#L https://github.com/rudolph9/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
+```
+
+## History
+
+Forked from [mathiasbynenes/dotfiles](https://github.com/mathiasbynens/dotfiles).
