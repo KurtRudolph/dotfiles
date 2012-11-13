@@ -34,10 +34,12 @@ set exrc
 set secure
 " Enable line numbers
 set number
+" Enable 256 colors
+set t_Co=256
 " Enable syntax highlighting
 syntax on
 " Set the maximum columns scanned for syntax highlight, default (3000) very slow make vim sluggish
-set synmaxcol=200
+set synmaxcol=1000
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
