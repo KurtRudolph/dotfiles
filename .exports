@@ -13,6 +13,7 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+export PATH=$HOME/bin:$PATH
 # Add node_module executables to PATH
-export PATH=$PATH:/usr/local/share/npm/bin/ 
+export PATH=$PATH:/usr/local/share/npm/bin/
+export PATH=$PATH:$HOME/.rvm/bin/
