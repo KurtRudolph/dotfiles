@@ -18,5 +18,3 @@ fi
 # install rvm to the local home directory
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 source "$HOME/.bash_profile"
-
-source ~/.bash_profile
