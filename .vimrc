@@ -88,6 +88,7 @@ function! StripWhitespace()
   call setpos('.', save_cursor)
   call setreg('/', old_query)
 endfunction
+" Strip white spaces (,ss)
 noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
@@ -98,6 +99,12 @@ if has("autocmd")
   filetype on
   " Treat .json files as .js
   autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+  " Recognize upc files as C files
+  autocmd BufNewFile,BufRead *.upc setfiletype upc syntax=c
+  " Recognize cuda files as C files
+  autocmd BufNewFile,BufRead *.cu setfiletype cuda syntax=c
+  " Add hamlc file syntax highlighting
+  autocmd BufRead,BufNewFile *.hamlc setfiletype hamlc syntax=haml
 endif
 
 " Loads current verson of vim-pathogen
@@ -105,11 +112,5 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Loads all vim plugins stored in .vim/bundle
 call pathogen#infect()
 
-" Recognize upc files as C files
-au BufNewFile,BufRead *.upc set filetype=c 
-" Recognize cuda files as C files
-au BufNewFile,BufRead *.cu set filetype=c 
 " Set the colorscheme
 colorscheme desert
-" Add hamlc file syntax highlighting
-au BufRead,BufNewFile *.hamlc set ft=haml
