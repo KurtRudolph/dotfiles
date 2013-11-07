@@ -121,3 +121,9 @@ colorscheme desert
 "also places the cursor in the last place that it was left.
 au BufWinLeave * mkview
 au BufWinEnter * silent loadview
+
+
+" Vim-multiple-cursor make it so when escape is pushed 
+" multiple cursors aren't lost
+let g:multi_cursor_exit_from_visual_mode=0
+let g:multi_cursor_exit_from_insert_mode=0

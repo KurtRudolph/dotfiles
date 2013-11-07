@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/vim-ember-script"]
 	path = .vim/bundle/vim-ember-script
 	url = https://github.com/heartsentwined/vim-ember-script.git
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
