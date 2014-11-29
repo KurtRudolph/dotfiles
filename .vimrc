@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/AutoComplPop'
+Plugin 'kien/ctrlp.vim'
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -132,4 +133,5 @@ colorscheme desert
 "also places the cursor in the last place that it was left.
 au BufWinLeave * mkview
 au BufWinEnter * silent loadview
+
 
