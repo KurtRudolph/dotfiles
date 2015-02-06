@@ -54,3 +54,6 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.exports
 
 source $HOME/.aliases
+
+# Enable comments from the repl
+setopt interactivecomments
